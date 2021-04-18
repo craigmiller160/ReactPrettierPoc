@@ -1,0 +1,33 @@
+{
+  "version": 3,
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react",
+    "declaration": false,
+    "module": "es2015"
+  },
+  "include": [
+    "/home/craig/Development/Other/ReactPrettierPoc/src/**/*",
+    "/home/craig/Development/Other/ReactPrettierPoc/test/**/*"
+  ],
+  "exclude": [
+    "/home/craig/Development/Other/ReactPrettierPoc/node_modules",
+    "/home/craig/Development/Other/ReactPrettierPoc/lib",
+    "/home/craig/Development/Other/ReactPrettierPoc/build",
+    "/home/craig/Development/Other/ReactPrettierPoc/.yalc"
+  ]
+}
