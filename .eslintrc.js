@@ -21,13 +21,18 @@ module.exports = {
 		'eslint:recommended',
 		'plugin:react/recommended',
 		'plugin:jsx-a11y/recommended',
-		'plugin:@typescript-eslint/recommended',
 		'plugin:prettier/recommended'
 	],
-	parser: '@typescript-eslint/parser',
 	rules: {
 		'prettier/prettier': ['error', {}, { usePrettierrc: true }]
-	}
+	},
+	overrides: [
+		{
+			files: ['**/*.ts?(x)'],
+			parser: '@typescript-eslint/parser',
+			extends: ['plugin:@typescript-eslint/recommended']
+		}
+	]
 };
 
 // https://dev.to/onygami/eslint-and-prettier-for-react-apps-bonus-next-js-and-typescript-3e46
