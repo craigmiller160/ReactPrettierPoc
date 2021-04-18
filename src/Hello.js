@@ -5,7 +5,7 @@ const Hello = (props) => (
     <div>
         <h1>{ props.message }</h1>
     </div>
-);
+)
 Hello.propTypes = {
     message: PropTypes.string.isRequired
 };
