@@ -21,8 +21,10 @@ module.exports = {
 		'eslint:recommended',
 		'plugin:react/recommended',
 		'plugin:jsx-a11y/recommended',
+		'plugin:@typescript-eslint/recommended',
 		'plugin:prettier/recommended'
 	],
+	parser: '@typescript-eslint/parser',
 	rules: {
 		'prettier/prettier': ['error', {}, { usePrettierrc: true }]
 	}
