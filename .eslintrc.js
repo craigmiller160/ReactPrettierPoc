@@ -1,41 +1,31 @@
 module.exports = {
-	'env': {
-		'browser': true,
-		'es2021': true
+	root: true,
+	parserOptions: {
+		ecmaVersion: 2020,
+		sourceType: 'module',
+		ecmaFeatures: {
+			jsx: true
+		}
 	},
-	'extends': [
+	settings: {
+		react: {
+			version: 'detect'
+		}
+	},
+	env: {
+		browser: true,
+		amd: true,
+		node: true
+	},
+	extends: [
 		'eslint:recommended',
 		'plugin:react/recommended',
-		'plugin:@typescript-eslint/recommended'
+		'plugin:jsx-a11y/recommended',
+		'plugin:prettier/recommended'
 	],
-	'parser': '@typescript-eslint/parser',
-	'parserOptions': {
-		'ecmaFeatures': {
-			'jsx': true
-		},
-		'ecmaVersion': 12,
-		'sourceType': 'module'
-	},
-	'plugins': [
-		'react',
-		'@typescript-eslint'
-	],
-	'rules': {
-		'indent': [
-			'error',
-			'tab'
-		],
-		'linebreak-style': [
-			'error',
-			'unix'
-		],
-		'quotes': [
-			'error',
-			'single'
-		],
-		'semi': [
-			'error',
-			'always'
-		]
+	rules: {
+		'prettier/prettier': ['error', {}, { usePrettierrc: true }]
 	}
 };
+
+// https://dev.to/onygami/eslint-and-prettier-for-react-apps-bonus-next-js-and-typescript-3e46
